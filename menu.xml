@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <menu>
-  <category name="Pizza">
+  <category name="Pizza 🍕">
     <item>
       <listing>Margherita</listing>
       <price>16.95</price>
@@ -14,7 +14,7 @@
       <price>20.95</price>
     </item>
   </category>
-  <category name="Pasta">
+  <category name="Pasta 🍝">
     <item>
       <listing>Linguine pomodori</listing>
       <price>14.50</price>
@@ -28,7 +28,7 @@
       <price>18.00</price>
     </item>
   </category>
-  <category name="Burgers">
+  <category name="Burgers 🍔">
     <item>
       <listing>Beef burger</listing>
       <price>20.50</price>
@@ -42,7 +42,7 @@
       <price>16.50</price>
     </item>
   </category>
-  <category name="Salads">
+  <category name="Salads 🥗">
     <item>
       <listing>Greek salad</listing>
       <price>12.50</price>
@@ -56,7 +56,7 @@
       <price>16.50</price>
     </item>
   </category>
-  <category name="Deserts">
+  <category name="Deserts 🍰">
     <item>
       <listing>Tiramisu</listing>
       <price>7.50</price>
