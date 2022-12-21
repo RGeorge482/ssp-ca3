@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<menu>
+  <category name="Pizza">
+    <item>
+      <listing>Margherita</listing>
+      <price>16.95</price>
+    </item>
+    <item>
+      <listing>Pepperoni</listing>
+      <price>20.50</price>
+    </item>
+    <item glutenFree="true">
+      <listing>Vegetable</listing>
+      <price>20.95</price>
+    </item>
+  </category>
+  <category name="Pasta">
+    <item>
+      <listing>Linguine pomodori</listing>
+      <price>14.50</price>
+    </item>
+    <item>
+      <listing>Spagetti ragu</listing>
+      <price>16.50</price>
+    </item>
+    <item glutenFree="true">
+      <listing>Raviolli gamberi</listing>
+      <price>18.00</price>
+    </item>
+  </category>
+  <category name="Burgers">
+    <item>
+      <listing>Beef burger</listing>
+      <price>20.50</price>
+    </item>
+    <item>
+      <listing>Chicken burger</listing>
+      <price>19.00</price>
+    </item>
+    <item glutenFree="true">
+      <listing>Vegi burger</listing>
+      <price>16.50</price>
+    </item>
+  </category>
+  <category name="Salads">
+    <item>
+      <listing>Greek salad</listing>
+      <price>12.50</price>
+    </item>
+    <item>
+      <listing>Caprese salad</listing>
+      <price>14.70</price>
+    </item>
+    <item glutenFree="true">
+      <listing>Avocado salad</listing>
+      <price>16.50</price>
+    </item>
+  </category>
+  <category name="Deserts">
+    <item>
+      <listing>Tiramisu</listing>
+      <price>7.50</price>
+    </item>
+    <item>
+      <listing>Panna cotta</listing>
+      <price>6.50</price>
+    </item>
+    <item>
+      <listing>Chocolate fondant</listing>
+      <price>5.50</price>
+    </item>
+  </category>
+</menu>
