@@ -12,6 +12,7 @@ const   http = require('http'), //HTTP server
         router.use(express.urlencoded({extended: true}));
         router.use(express.json());
 
+        // function used to convert from XML to JSON
 function XMLtoJSON(filename, cb){
     let filepath = path.normalize(path.join(__dirname, filename));
     fs.readFile(filepath, 'utf8', function(err, xmlStr){
@@ -20,6 +21,7 @@ function XMLtoJSON(filename, cb){
     });
 };
 
+// function used to convert from JSON to XML
 function JSONtoXML(filename, obj, cb){
     let filepath = path.normalize(path.join(__dirname, filename));
     let builder = new xml2js.Builder();
@@ -28,6 +30,7 @@ function JSONtoXML(filename, obj, cb){
     fs.writeFile(filepath, xml, cb);
 };
 
+// method used to get menu item
 router.get('/get/html', function(req, res) {
 
     res.writeHead(200, {'Content-Type' : 'text/html'});
@@ -43,6 +46,7 @@ router.get('/get/html', function(req, res) {
     res.end(html.toString());
 });
 
+// method used to add menu item 
 router.post('/post/json', function(req, res){
     function appendJSON(obj){
         console.log(obj);
@@ -61,6 +65,7 @@ router.post('/post/json', function(req, res){
     res.redirect('back');
 });
 
+// method used to delete menu item
 router.post('/post/delete', function (req,res) {
     function deleteJSON(obj) {
         console.log(obj);

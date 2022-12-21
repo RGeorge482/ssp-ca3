@@ -1,6 +1,6 @@
 body {
     margin-bottom: 60px;
-    background: linear-gradient(139deg,#e6fafdcb 0%, #ecececb6 90%);
+    background: linear-gradient(139deg,#e6fafdcb 0%, #ecececb6 90%);  /*background color using linear gradient */
 }
 
 table {
