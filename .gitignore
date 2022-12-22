@@ -39,6 +39,7 @@ bower_components
 build/Release
 
 # Dependency directories
+# we try to not include the node_modues folder to our gitHub repository
 node_modules/
 jspm_packages/
 
