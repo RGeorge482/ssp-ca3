@@ -26,17 +26,17 @@ function calculateBill(idMenuTable) {
     return Math.round(fBillTotal * 100.0) / 100.0;
 };
 
-// This function either turns on or off the row highlighting for decaf
-// items (depending on the value of bShowDecaf)
+// This function either turns on or off the row highlighting for gluten free
+// items (depending on the value of bShowGlutenFree)
 function highlightDecaf(idTable, bShowGlutenFree) {
-    // if bShowDecaf is true, then we're highlighting decaf
+    // if bShowGlutenFree is true, then we're highlighting gluten free
     //	meals, otherwise we're unhighlighting them.
     var i = 0;
     var oTable = document.getElementById(idTable);
     var oTBODY = oTable.getElementsByTagName('TBODY')[0];
     var aTRs = oTBODY.getElementsByTagName('TR');
     // walk through each of the table rows and see if it has a 
-    // "decaf" attribute on it.
+    // "glutenFree" attribute on it.
     for (i = 0; i < aTRs.length; i++) {
         if (aTRs[i].getAttribute('glutenFree') && aTRs[i].getAttribute('glutenFree') == "true") {
             if (bShowGlutenFree) {

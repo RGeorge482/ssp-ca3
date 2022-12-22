@@ -1,5 +1,5 @@
 const   http = require('http'), //HTTP server
-        path = require('path'),
+        path = require('path'), // dependecy
         express = require('express'), //Handling HTTP requests & routing
         fs = require('fs'), //File system functionalities
         xmlParse = require('xslt-processor').xmlParse, //XML handling
@@ -8,7 +8,7 @@ const   http = require('http'), //HTTP server
         xml2js = require('xml2js'),
         server = http.createServer(router); //Init our server
         
-        router.use(express.static(path.resolve(__dirname,'views')));
+        router.use(express.static(path.resolve(__dirname,'views'))); // use static folder
         router.use(express.urlencoded({extended: true}));
         router.use(express.json());
 
@@ -85,6 +85,7 @@ router.post('/post/delete', function (req,res) {
     res.redirect('back');
 })
 
+// use the port number and print a message for user
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() {
     const addr = server.address();
     console.log("Server listening at", addr.address + ":" + addr.port)
