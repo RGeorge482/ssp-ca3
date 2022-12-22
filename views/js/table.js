@@ -1,3 +1,4 @@
+// function used to draw table
 function draw_table(){
     $("#results").empty();
     $.getJSONuncached = function(url){
@@ -15,6 +16,7 @@ function draw_table(){
     $.getJSONuncached("/get/html")
 };
 
+// function used to select a raw
 function select_row(){
     $("#menuTable tbody tr[id]").click(function(){
         $(".selected").removeClass("selected");
@@ -25,6 +27,7 @@ function select_row(){
     });
 };
 
+// function used to delete a raw
 function delete_row(sec, ent){
     $("#delete").click(function (){
         $.ajax({
