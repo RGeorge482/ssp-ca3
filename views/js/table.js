@@ -1,3 +1,4 @@
+// The code follows the structure of the example given in class by our teacher  Mikhail Timofeev
 // function used to draw table
 function draw_table(){
     $("#results").empty();

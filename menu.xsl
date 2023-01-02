@@ -1,3 +1,4 @@
+ <!-- The code follows the structure of the example given in class by our teacher  Mikhail Timofeev-->
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- XSL file used to select the item menu and create the table  -->
 <xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">

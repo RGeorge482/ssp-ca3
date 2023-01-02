@@ -1,3 +1,4 @@
+// The code follows the structure of the example given in class by our teacher  Mikhail Timofeev
 const   http = require('http'), //HTTP server
         path = require('path'), // dependecy
         express = require('express'), //Handling HTTP requests & routing
